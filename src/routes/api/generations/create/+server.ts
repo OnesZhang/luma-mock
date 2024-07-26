@@ -13,7 +13,7 @@ export const POST = (async ({ request }: RequestEvent) => {
 		if (!prompt) return json({ message: '缺少必要参数：prompt' }, { status: 400 });
 
 		const headers = {
-			Cookie: `access_token=${access_token}`,
+			Cookie: `luma_session=${access_token}`,
 			Origin: 'https://lumalabs.ai',
 			Referer: 'https://lumalabs.ai',
 			'Content-type': 'application/json'
