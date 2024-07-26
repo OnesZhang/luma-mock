@@ -11,7 +11,7 @@ export const GET = (async () => {
 	try {
 		const res = await fetch(baseUrl, {
 			method: 'GET',
-			headers: { Cookie: `access_token=${access_token}` }
+			headers: { Cookie: `luma_session=${access_token}` }
 		});
 
 		if (!res.ok) {
