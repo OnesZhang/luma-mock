@@ -19,7 +19,7 @@ export const GET = (async (req: RequestEvent) => {
 		const res = await fetch(`${url.toString()}`, {
 			method: 'GET',
 			headers: {
-				Cookie: `access_token=${access_token}`
+				Cookie: `luma_session=${access_token}`
 			}
 		});
 
