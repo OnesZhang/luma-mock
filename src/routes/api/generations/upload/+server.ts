@@ -22,7 +22,7 @@ export const POST = (async ({ request }: RequestEvent) => {
 		const res = await fetch(baseUrl + '?file_type=image&filename=file.jpg', {
 			method: 'POST',
 			headers: {
-				Cookie: `access_token=${access_token}`
+				Cookie: `luma_session=${access_token}`
 			},
 			body: formData
 		});
