@@ -15,7 +15,7 @@ export const GET = (async ({ params }: RequestEvent) => {
 		const res = await fetch(`${baseUrl}${id}`, {
 			method: 'GET',
 			headers: {
-				Cookie: `access_token=${access_token}`
+				Cookie: `luma_session=${access_token}`
 			}
 		});
 
